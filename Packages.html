@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Packages</title>
+</head>
+<body>
+<h1><b><u>PYTHON PACKAGES</u></b></h1>
+<h2><b>MODULES</b></h2>
+<hr>
+<img src="">
+<p>
+	In this article, you'll learn to divide your code base into clean, efficient modules using Python packages. Also, you'll learn to import and use your own or third party packages in a Python program.
+</p>
+<ul>
+    <li>What are packages?</li>
+    <li>A Simple Example</li>
+    <li>Importing Module from a Package</li>
+    <li></li>
+ </ul> 
+ <h2>What are packages</h2>
+ <p>
+ 	We don't usually store all of our files on our computer in the same location. We use a well-organized hierarchy of directories for easier access.
+    As our application program grows larger in size with a lot of modules, we place similar modules in one package and different modules in different packages. This makes a project (program) easy to manage and conceptually clear. 
+    Similarly, as a directory can contain subdirectories and files, a Python package can have sub-packages and modules.
+
+    A directory must contain a file named __init__.py in order for Python to consider it as a package. This file can be left empty but we generally place the initialization code for that package in this file.	
+</p>
+<h2>A Simple Example</h2>
+<p>
+  Here is an example. Suppose we are developing a game. One possible organization of packages and modules could be as shown:
+
+  <img src="https://cdn.programiz.com/sites/tutorial2program/files/PackageModuleStructure.jpg">
+ </p>
+ <h2>Importing Module from a Package</h2>
+ We can import modules from packages using the dot (.) operator.
+
+ For example, if we want to import the start module in the above example, it can be done as follows:
+               import Game.Level.start
+ Now, if this module contains a function named select_difficulty(), we must use the full name to reference it.
+                   Game.Level.start.select_difficulty(2) 
+ 
+
+                               
+
+
+</body>
+</html>
